@@ -22,12 +22,12 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border:1px soli
 <table>
 <tr><th>Information</th><th>When</th></tr>
 <tr><td>Account details: name, email address, profile photo, sign-in method (email and password, Google or Apple) and a user ID. We never see your Google or Apple password</td><td>When you create an account or sign in</td></tr>
-<tr><td>Your messages and files sent to the AI assistant or a research tool, and the replies</td><td>When you use those features</td></tr>
+<tr><td>Your messages and files sent to the AI assistant or a research tool, and the replies. This includes text you give to the study tools (quizzes and flashcards), the canvas document editor and deep research, and any custom instructions or persona you set</td><td>When you use those features</td></tr>
 <tr><td>Memories you choose to keep, projects, bookmarks, research drafts, analysis history, datasets you upload and M&amp;E records you or your organisation enter</td><td>When you use those features while signed in</td></tr>
 <tr><td>Optional chat backup (see section 5)</td><td>Only if you switch it on</td></tr>
 <tr><td>Subscription and purchase status (we do not see your card details)</td><td>When you subscribe</td></tr>
 <tr><td>Basic technical information such as device type, app version, error and crash information, and usage counts used for quotas and fair use</td><td>While you use the app</td></tr>
-<tr><td>Voice: if you use the microphone, speech is converted to text by your phone's speech service</td><td>Only when you tap the microphone</td></tr>
+<tr><td>Voice: if you use the microphone or talk mode, speech is converted to text by your phone's speech service. If you use read aloud, the answer is spoken by your phone's own text-to-speech service</td><td>Only when you tap the microphone, turn on talk mode or tap Listen</td></tr>
 <tr><td>Photos or files you pick to attach</td><td>Only the ones you choose</td></tr>
 </table>
 
@@ -44,7 +44,7 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border:1px soli
 <p>We use trusted providers to run Scholivance. They process information only to provide their service to us:</p>
 <ul>
 <li><strong>Google Firebase</strong> (sign-in, database, file storage, hosting of our servers).</li>
-<li><strong>Anthropic</strong>: AI text generation and web search for literature. <strong>OpenAI</strong>: image generation from prompts you submit, and, where selected, AI text generation. The text and files you send to AI features, and relevant saved memories, are sent to these providers to produce answers. Do not include information you do not want processed this way.</li>
+<li><strong>Anthropic</strong>: AI text generation and web search for literature. <strong>OpenAI</strong>: image generation from prompts you submit, and, where selected, AI text generation. The text and files you send to AI features, and relevant saved memories, are sent to these providers to produce answers. Deep research splits your question into several parts and uses these providers' web search to find sources; we keep the report and its source links in the chat, not the web pages themselves. Do not include information you do not want processed this way.</li>
 <li><strong>Crossref, PubMed (NCBI), DOAJ and OpenAlex</strong> receive source titles, identifiers and search terms when references are checked or looked up, not your own writing.</li>
 <li><strong>RevenueCat, Google Play and Apple</strong> handle subscriptions and payments.</li>
 <li><strong>Google and Apple</strong> if you choose those sign-in options.</li>
@@ -57,7 +57,8 @@ table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border:1px soli
 <p>Switching backup off in Profile deletes your cloud copy; your chats stay on your phone. If you delete a single chat while backup is on, its content is removed and a small empty marker is kept so your other devices can delete it too. Deleting your account permanently removes all your backed-up chats. Backups are limited to 300 chats per account. Backups are protected in transit and at rest by our cloud provider but are not end-to-end encrypted. Please avoid typing sensitive identifiers such as national ID numbers or passwords into chats.</p>
 
 <h2>6. Data stored on your phone</h2>
-<p>Chats, images you generate or save, and some work are stored on your device, separated by account. Signing out or switching accounts keeps each account's data apart. Clearing the app's storage or uninstalling the app removes data that is stored only on your device.</p>
+<p>Chats, images you generate or save, your assistant settings (persona, custom instructions, read-aloud and talk-mode choices) and some work are stored on your device, separated by account. When you edit a question in a chat, the earlier version of that question and its replies is kept on your phone so you can switch back to it; these earlier versions are not included in the optional chat backup, and pictures are not kept in them. Signing out or switching accounts keeps each account's data apart. Clearing the app's storage or uninstalling the app removes data that is stored only on your device.</p>
+<p><strong>Temporary chat.</strong> A chat started as a temporary chat is not saved in your chat history, is not backed up, and does not use or create memories. Your messages are still sent to our AI provider to produce the answer, and usage counts still apply. <strong>Sharing.</strong> When you share a chat, answer or report, it goes through your phone's share menu to the app you choose; we do not receive it and have no control over where it goes next.</p>
 
 <h2>7. M&amp;E and organisation data</h2>
 <p>If you use the M&amp;E tools to collect data for an organisation or programme, the organisation that created the project decides what is collected and who can access it, and is responsible for having consent from the people the data is about. Roles control who can view, enter, approve and export. Reports hide very small groups to protect privacy. Do not collect more personal information than your project needs.</p>
